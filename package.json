@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "ethers": "^6.15.0",
+    "fs-extra": "^11.3.0",
+    "solc": "^0.8.7"
+  },
+  "scripts": {
+    "compile": "npx solc@0.8.7 --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+}
