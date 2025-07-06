@@ -1,37 +1,20 @@
-hardhat/node_modules/
-hardhat/node_modules
-hardhat/.env
+# Ignore all node_modules in any folder, anywhere
+**/node_modules/
 
-# Hardhat files
-hardhat/cache
-hardhat/artifacts
+# Ignore all .env files in any subfolder
+**/.env
 
-# TypeChain files
-hardhat/typechain
-hardhat/typechain-types
+# Hardhat build output
+**/cache/
+**/artifacts/
 
-# solidity-coverage files
-hardhat/coverage
-hardhat/coverage.json
+# TypeChain generated files
+**/typechain/
+**/typechain-types/
 
-# Hardhat Ignition default folder for deployments against a local node
-hardhat/ignition/deployments/chain-31337
+# Solidity coverage output
+**/coverage/
+**/coverage.json
 
-node_modules/
-node_modules
-.env
-
-# Hardhat files
-/cache
-/artifacts
-
-# TypeChain files
-/typechain
-/typechain-types
-
-# solidity-coverage files
-/coverage
-/coverage.json
-
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# Hardhat Ignition local deployments
+**/ignition/deployments/chain-31337/
