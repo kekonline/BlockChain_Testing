@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fund Me App</title>
+    
+</head>
+<body>
+Hello, welcome to the Fund Me App!
+
+<script>
+if (typeof window.ethereum === 'undefined') {
+    alert('Please install MetaMask to use this app.');
+} else {
+window.ethereum.request({ method: 'eth_requestAccounts' })
+    .then(accounts => {
+        if (accounts.length === 0) {
+            alert('Please connect your MetaMask wallet.');
+        } else {
+            console.log('Connected account:', accounts[0]);
+            // You can now interact with the blockchain using this account
+        }
+    })
+    .catch(error => {
+        console.error('Error connecting to MetaMask:', error);
+        alert('An error occurred while connecting to MetaMask. Please try again.');
+    });
+
+}
+</script>
+</body>
+
+</html>
